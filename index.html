@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/97e03fbe3e.js" crossorigin="anonymous"></script>
+    <title>Signature 9</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b92323;
+}
+
+.container .email-signature{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    background: #dad6d6;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px #000;
+    padding: 10px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .email-signature .image img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    clip-path: polygon(100% 0, 100% 70%, 0 100%, 0 30%);
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px #020202;
+    position: relative;
+}
+
+.container .email-signature .image{
+    border-right: 2px solid #fd0303;
+    padding-right: 30px;
+}
+
+.container .email-signature .image::before{
+    content: '';
+    position: absolute;
+    top: 22px; right: 475px;
+    height: 175px;
+    width: 205px;
+    background: #fd0303;
+    clip-path: polygon(45% 0, 70% 51%, 34% 100%, 0 57%);
+    box-shadow: 20px 0 0 #2c3e50;
+}
+
+.container .email-signature .image::before{
+    background-image: url(oppu/bg.webp);
+    background-size: 620px;
+}
+
+.container .email-signature .content{
+    padding-left:30px;
+}
+
+.container .email-signature .content .name{
+    padding: 10px 0px 0px 0px;
+    font-size: 25px;
+    color: #FD0303;
+}
+
+.container .email-signature .content span{
+    color: #333;
+}
+
+.container .email-signature .content .B{
+    padding-left: 82px;
+}
+
+.container .email-signature .content .post{
+    font-size: 15px;
+    padding: 5px ;
+    margin: 0px;
+    color: #333;
+    text-align: left;
+}
+
+.container .email-signature .content hr{
+    margin-bottom: 20px;
+    width: 100px;
+    background-color: #fd0303;
+}
+
+.container .email-signature .content .contact2{
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #333
+}
+
+.container .email-signature .content .contact a{
+    list-style-type: none;
+    margin: 5px 0;
+    color: #2c3e50;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.container .email-signature .content .contact a:hover{
+    color: black;
+}
+
+.container .email-signature .content .contact a i{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fd0303;
+}
+
+.container .email-signature .content .contact a i:hover{
+    background-color: #fd0303;
+    color: #fff;
+}
+
+.container .email-signature .icons{
+    position: absolute;
+    right: -15px;
+    display: flex;
+    flex-flow: column;
+    background-color: #f70505;
+    padding: 13px 20px 20px 5px;
+    border-radius: 90px;
+}
+
+.container .email-signature .icons i{
+    text-decoration: none;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    margin: 6px 0;
+}
+
+.container .email-signature .icons i:hover{
+    background: #fff;
+    color: #fd0303;
+}
+
+@media (max-width:600px){
+    .container .email-signature{
+        flex-flow: column;
+        width: 61%;
+    }
+    .container .email-signature .image{
+        padding-left: 40px;
+        padding-bottom: 20px;
+        border-right: #dad6d6;
+        border-bottom: 2px solid #fd0303;
+    }
+    .container .email-signature .image img{
+        margin-top: 20px;
+    }
+    .container .email-signature .image:before{
+        width: 150px;
+        top: 38px;
+        left: 60px;
+        height: 150px;
+    }
+    .container .email-signature .content{
+        width: 100%;
+        padding: 50px 0;
+    }
+    .container .email-signature .content .A{
+        padding-right: 60px;
+    }
+    .container .email-signature .content .B{
+        padding-left: 0px;
+    }
+    .container .email-signature .icons{
+        flex-flow: row;
+        text-align: center;
+        margin-top: 557px;
+        margin-right: 12px;
+        padding: 0px 56px 5px 56px;
+    }
+    
+    .container .email-signature .icons i{
+        height: 20px;
+        width: 20px;
+        color: #fff;
+        border-radius: 50%;
+        margin: 5px 0;
+        padding: 0px 20px;
+    }
+    
+    .container .email-signature .content .icons{
+        flex-flow: row;
+        padding: 5px 0;
+    }
+    .container .email-signature .content .icons a{
+        margin: 0px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="email-signature">
+            <div class="image">
+                <img src="oppu/me.jpg" alt="Oppu" height="100px">
+            </div>
+            <div class="content">
+                <h1 class="name">Mojahedul <span>Oppu</span></h1>
+                <h3 class="post">Web Designer</h3>
+                <hr>
+                <p class="contact">
+                    <a  class="A" href="tel:+8801572044782"><i class="fa-solid fa-phone-volume"></i>01572044782</a>
+                    
+                    <a href="tel:+8801572354378" class="B"><i class="fa-solid fa-phone"></i>01572354378</a>
+                </p>
+                <p class="contact">
+                    <a href="mailto:hillopu71@gmail.com" class="C"><i class="fa-solid fa-envelope"></i>hillopu71@gmail.com</a>
+                    
+                    <a href="https://www.oppu.com" class="D"><i class="fa-solid fa-globe"></i>oppu.com</a>
+                </p>
+                <p class="contact2">Islampur, Panchari, Khagrachari.</p>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/mojahedul.oppu"><i class="fa-brands fa-facebook"></i></a>
+
+                <a href="https://www.twitter.com/mojaheduloppu"><i class="fa-brands fa-twitter"></i></a>
+
+                <a href="https://www.youtube.com/mojaheduloppu"><i class="fa-brands fa-youtube"></i></a>
+
+                <a href="https://www.linkedin.com/mojaheduloppu"><i class="fa-brands fa-linkedin"></i></a>
+                
+                <a href="https://www.fa-instagram.com/mojaheduloppu"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
